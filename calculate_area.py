@@ -3,26 +3,23 @@
 # Reference: https://parade.com/1039985/marynliles/pick-up-lines/
 
 def calculate_area_under_graph(graph):
-    """Calculate the area under the input graph."""
-    # bla bla bla.
+    """calculate the area under the input graph."""
     pass
 
-def find_maximum_value(lst):
-    """Find and return the maximum value in the given list."""
-    max_value = lst[0]
-    for value in lst:
+def find_maximum_value(list_values):
+    """find and return the maximum value in the list."""
+    max_value = list_values[0]
+    for value in list_values:
         if value > max_value:
             max_value = value
     return max_value
 
-def extract_words_from_sentence(sentence):
-    """Extract and return a list of words from the input sentence."""
-    words = sentence[0:].split(' ')
-    return words
-
-# Example usage:
 li = [5, -1, 43, 32, 87, -100]
 print(find_maximum_value(li))
 
-print(extract_words_from_sentence('If you were a vegetable, you’d be a ‘cute-cumber.'))
+def split_sentence_into_words(sentence):
+    """split the input sentence into a list of words and return it."""
+    words = sentence.split(' ')
+    return words
 
+print(split_sentence_into_words('If you were a vegetable, you’d be a ‘cute-cumber.'))
